@@ -1178,4 +1178,148 @@ h2, h3, h4, h5, h6 {
 }
 
 
+.services-hero {
+  margin-bottom: 50px;
+}
 
+.descr-margin {
+  margin-bottom: 79px;
+}
+
+.creative-section {
+  margin-bottom: 100px;
+}
+
+.creative-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.creative-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 282px;
+  height: 386px;
+  background-color: var(--color-primary);
+}
+
+.persone-block {
+  position: absolute;
+  top: 70%;
+  padding: 16px 58px 18px 16px;
+  max-width: 258px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.persone-name {
+  color: var(--gray-70);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+
+}
+
+.persone-ceo {
+  color: var(--gray-10);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.creative-image {
+  position: relative;
+  width: 100%;
+}
+
+.contact-us {
+  margin-bottom: 100px;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 840px;
+  width: 100%;
+  gap: 24px;
+
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+  margin-bottom: 8px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid var(--gray-20);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  color: var(--gray-70);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+}
+
+.form-phone {
+  display: flex;
+  gap: 12px;
+}
+
+.form-select {
+  max-width: 80px;
+}
+
+.form-textarea {
+  height: 160px;
+  resize: none;
+}
+
+.button-primary {
+  align-self: center;
+
+}
