@@ -1,0 +1,49 @@
+/* 1. Тег */
+p {
+  background-color: lightblue;
+}
+
+/* 2. Клас */
+.text {
+  background-color: lightgreen;
+}
+
+/* 3. ID */
+#unique {
+  background-color: lightcoral;
+}
+
+/* 4. Атрибут */
+[type="submit"] {
+  background-color: lightgoldenrodyellow;
+}
+
+/* 5. Вкладений селектор */
+div p {
+  background-color: lightpink;
+}
+
+/* 6. Дочірній селектор */
+ul > li {
+  background-color: lightgray;
+}
+
+/* 7. Послідовність селекторів */
+section article p {
+  background-color: lavender;
+}
+
+/* 8. Комбінація тег + клас + id */
+p.highlight#mix {
+  background-color: khaki;
+}
+
+/* 9. Вкладеність класів */
+.box .note {
+  background-color: lightcyan;
+}
+
+/* 10. Комбінація тег + атрибут */
+p[data-info] {
+  background-color: peachpuff;
+}
