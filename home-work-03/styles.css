@@ -324,6 +324,12 @@ h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
+.button-blue:hover {
+  opacity: 1;
+  border-color: var(--color-white);
+  filter: drop-shadow(5px 10px 10px var(--color-dark));
+}
+
 .button-white {
   color: var(--gray-70);
   padding-inline: var(--button-padding-x);
@@ -358,6 +364,16 @@ h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 74px;
+}
+
+.header-menu-item {
+  display: inline-block;
+  transition: transform 0.4s ease; /*Плавный переход */
+}
+
+.header-menu-item:hover {
+  transform: rotate(5deg) scale(2.1); /* поворот и приближение */
+  filter: drop-shadow(5px 10px 10px var(--color-dark));
 }
 
 .header-menu-link {
