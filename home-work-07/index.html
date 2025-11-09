@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>Homework 07 — CSS Fundamentals</title>
+  <link
+    rel="stylesheet"
+    href="styles/main.css"
+  >
+</head>
+<body>
+<header class="header">
+  <div class="header-container">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link "
+            href="#task2"
+          >
+            Blocks
+
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link "
+            href="#task3"
+          >
+
+            Normalize
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link "
+            href="#task4"
+          >
+
+            CSS properties
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link "
+            href="#task5"
+          >
+
+            Float and Clear
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link "
+            href="#task6"
+          >
+
+            Positioning
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h1 class="title"> 1. Homework 07 - CCS Basics and Layout Experiments</h1>
+
+    <!-- 2. Block and Inline Elements -->
+    <section
+      id="task2"
+      class="elements"
+    >
+
+      <h2 class="elements__title">2. Working with Block and Inline Elements</h2>
+      <div class="elements__block">This is a block-level element (div)</div>
+      <span class="elements__inline">This is an inline element (span)</span>
+      <p>
+        <strong>Conclusion:</strong> Block elements take the full width of their container,
+        while inline elements only take up as much space as needed.
+      </p>
+    </section>
+
+    <!-- 3. Normalize and Reset CSS -->
+    <section id="task3">
+      <h2>3. Normalize and Reset Styles</h2>
+      <p>
+        This project uses
+        <strong>normalize.css</strong> to make browser styles consistent.
+        Unlike reset.css, which removes all default styling, normalize.css keeps useful defaults
+        while fixing inconsistencies between browsers.
+      </p>
+    </section>
+
+    <!-- 4. CSS Properties -->
+    <section
+      class="display"
+      id="task4"
+    >
+      <h2 class="display__title">4. Exploring CSS Properties</h2>
+      <h3 class="display__title">Display Property</h3>
+      <div class="display__block">Display: block</div>
+      <div class="display__inline">Display: inline</div>
+      <div class="display__flex">Display: flex container</div>
+
+      <h4>Box-sizing Property</h4>
+      <div class="box-example">This box uses box-sizing: border-box</div>
+    </section>
+
+    <!-- 5. Float and Clear -->
+    <section
+      class="float-clear"
+      id="task5"
+    >
+      <h2 class="float-clear__title">5. Practicing Float and Clear</h2>
+      <div class="float-clear__container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores dolor doloremque ea et ex mollitia obcaecati ullam! Aut consectetur doloribus optio rem reprehenderit unde? Consequuntur distinctio odit sed veniam?
+        <div class="box left">Float left</div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facere iste molestiae, omnis quo veritatis voluptas! Accusantium autem eum inventore iste itaque maiores quo repellendus repudiandae, sequi, temporibus voluptas, voluptatem!
+
+        <div class="box right">Float right</div>
+        <div class="clear">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis, consequuntur cum cupiditate doloremque eaque eligendi est et eveniet exercitationem explicabo fugit magni, maiores nihil, placeat quo rerum velit vitae!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores commodi consectetur ducimus ea facilis in incidunt necessitatibus nesciunt pariatur quae quibusdam quisquam rem repellendus repudiandae saepe sunt, suscipit vel!
+
+        </div>
+        <p class="after-text">The text below doesn’t wrap around because of clear: both;</p>
+
+      </div>
+    </section>
+
+    <!-- 7. Positioning -->
+    <section
+      class="position"
+      id="task6"
+    >
+      <div class="position__sticky">Sticky</div>
+      <h2 class="position__title">7. Positioning Elements</h2>
+      <div class="position__container">
+        <div class="position__static">Static</div>
+        <div class="position__relative">Relative</div>
+        <div class="position__absolute">Absolute</div>
+        <div class="position__fixed">Fixed</div>
+
+      </div>
+
+      <p>
+        Each positioning type behaves differently.
+        <strong>Fixed</strong> stays at the same position
+        on the screen, while
+        <strong>Sticky</strong> acts like relative until you scroll to its threshold.
+      </p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae doloribus officia perferendis placeat quaerat reprehenderit repudiandae suscipit. Deleniti unde, ut. Assumenda facilis nam porro provident rem repellendus vitae, voluptate! Libero magnam odio repudiandae similique. Dolores inventore porro quod. Accusamus aliquam asperiores autem debitis dignissimos dolore dolorem earum eligendi esse eum explicabo facere facilis fuga fugiat id illo iste labore laudantium magni maiores minima, nesciunt odio odit pariatur placeat quia quos, repellendus tenetur unde ut voluptas voluptates voluptatibus voluptatum! Aliquam aliquid animi aperiam asperiores dolore eius enim, eos iure iusto minus odio praesentium, quaerat quam quas recusandae unde vero voluptate.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae doloribus officia perferendis placeat quaerat reprehenderit repudiandae suscipit. Deleniti unde, ut. Assumenda facilis nam porro provident rem repellendus vitae, voluptate! Libero magnam odio repudiandae similique. Dolores inventore porro quod. Accusamus aliquam asperiores autem debitis dignissimos dolore dolorem earum eligendi esse eum explicabo facere facilis fuga fugiat id illo iste labore laudantium magni maiores minima, nesciunt odio odit pariatur placeat quia quos, repellendus tenetur unde ut voluptas voluptates voluptatibus voluptatum! Aliquam aliquid animi aperiam asperiores dolore eius enim, eos iure iusto minus odio praesentium, quaerat quam quas recusandae unde vero voluptate.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae doloribus officia perferendis placeat quaerat reprehenderit repudiandae suscipit. Deleniti unde, ut. Assumenda facilis nam porro provident rem repellendus vitae, voluptate! Libero magnam odio repudiandae similique. Dolores inventore porro quod. Accusamus aliquam asperiores autem debitis dignissimos dolore dolorem earum eligendi esse eum explicabo facere facilis fuga fugiat id illo iste labore laudantium magni maiores minima, nesciunt odio odit pariatur placeat quia quos, repellendus tenetur unde ut voluptas voluptates voluptatibus voluptatum! Aliquam aliquid animi aperiam asperiores dolore eius enim, eos iure iusto minus odio praesentium, quaerat quam quas recusandae unde vero voluptate.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae doloribus officia perferendis placeat quaerat reprehenderit repudiandae suscipit. Deleniti unde, ut. Assumenda facilis nam porro provident rem repellendus vitae, voluptate! Libero magnam odio repudiandae similique. Dolores inventore porro quod. Accusamus aliquam asperiores autem debitis dignissimos dolore dolorem earum eligendi esse eum explicabo facere facilis fuga fugiat id illo iste labore laudantium magni maiores minima, nesciunt odio odit pariatur placeat quia quos, repellendus tenetur unde ut voluptas voluptates voluptatibus voluptatum! Aliquam aliquid animi aperiam asperiores dolore eius enim, eos iure iusto minus odio praesentium, quaerat quam quas recusandae unde vero voluptate.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, at aut autem beatae consectetur, cumque dolorum earum eligendi et inventore iste maiores mollitia optio perferendis reiciendis saepe, temporibus ullam vero?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur aut cupiditate ducimus eveniet facilis fugit laborum minima nisi, quisquam sapiente sint temporibus totam vero, vitae voluptatem voluptatum? Eos!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet, corporis culpa cum debitis dolore enim esse eveniet explicabo labore natus nisi quas quo quod reiciendis saepe sed tempore.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consequuntur doloremque dolorum eaque, est fuga nobis pariatur possimus quis quo quod repellendus repudiandae saepe soluta sunt tenetur vitae voluptas!
+    </section>
+  </div>
+</main>
+</body>
+</html>

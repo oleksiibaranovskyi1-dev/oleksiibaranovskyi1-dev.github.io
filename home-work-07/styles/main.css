@@ -143,8 +143,229 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
-body p {
-  color: red;
+/* ===== General Page Styles ===== */
+body {
+  font-family: "Sen";
+  background-color: #A1A8C8;
+  font-size: 24px;
+  padding-top: 140px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 78px;
+  font-weight: 700;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.header-container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.header__nav {
+  background-color: #141414;
+  padding: 20px;
+  border-radius: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header__nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.header__nav-link:hover {
+  color: #ffd700;
+}
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  transition: transform 0.3s ease;
+}
+.header__nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.title {
+  max-width: 1000px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.elements__title {
+  max-width: 1000px;
+  text-align: center;
+}
+.elements__block {
+  background: #000000;
+  padding: 10px;
+  color: #FFFFFF;
+}
+.elements__inline {
+  background: #d90d0d;
+}
+
+/* ===== Task 4: Display Property ===== */
+.display__title {
+  max-width: 800px;
+  text-align: center;
+}
+.display__block {
+  display: block;
+  background: #007bff;
+  margin: 5px 0;
+  padding: 5px;
+}
+.display__inline {
+  display: inline;
+  background: coral;
+  padding: 3px;
+}
+.display__flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: #949292;
+  padding: 10px;
+}
+.display {
+  /* ===== Task 4: Box-sizing ===== */
+}
+.display .box-example {
+  width: 200px;
+  padding: 20px;
+  border: 4px solid #000;
+  box-sizing: border-box;
+  background: #007bff;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* ===== Task 5: Float and Clear ===== */
+.float-clear__title {
+  max-width: 800px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.float-clear .float-container {
+  border: 2px solid #333;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fafafa;
+}
+.float-clear .box {
+  max-width: 200px;
+  width: 100%;
+  height: 100px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px;
+}
+.float-clear .left {
+  float: left;
+  background: yellow;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+.float-clear .right {
+  float: right;
+  background: lightcoral;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+.float-clear .clear {
+  clear: both;
+  background-color: #d90d0d;
+}
+.float-clear .after-text {
+  background-color: #f5f5f5;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.position {
+  position: relative;
+  height: 1000px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.position__title {
+  max-width: 700px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.position__static {
+  position: static;
+  background: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.position__relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: lightblue;
+  margin-bottom: 10px;
+}
+.position__absolute {
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  top: 180px;
+  right: 10px;
+  background: lightgreen;
+  padding: 10px;
+}
+.position__fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  background: orange;
+}
+.position__sticky {
+  position: sticky;
+  top: 0;
+  background: pink;
+  padding: 10px;
+  border: 2px solid #3C3C3C;
+  font-weight: 700;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+/* ===== General Page Styles ===== */
+
+body {
+  font-family: 'Sen';
+  background-color: #A1A8C8;
+  font-size: 24px;
+  padding-top: 140px;
+
+
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 78px;
+  font-weight: 700;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
