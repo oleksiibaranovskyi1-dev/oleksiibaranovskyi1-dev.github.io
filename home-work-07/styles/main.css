@@ -1,16 +1,4 @@
-// ================================
-// 🧱  NORMALIZE.CSS (Project Base Reset)
-// ================================
-// Современная нормализация под проект Robin.W
-// --------------------------------------------
-// • корректная блочная модель
-// • обнуление отступов и списков с классами
-// • адаптивные изображения и формы
-// • единый стиль SVG и таблиц
-// • поддержка prefers-reduced-motion
-// ================================
-
-
+@charset "UTF-8";
 /* 🔲 Нормализация блочной модели */
 *,
 ::before,
@@ -18,19 +6,16 @@
   box-sizing: border-box;
 }
 
-
 /* 📋 Списки — убираем паддинги у списков с классами */
 :where(ul, ol):where([class]) {
   padding-left: 0;
 }
-
 
 /* ⚙️ Обнуляем внешние отступы body, figure, fieldset и blockquote */
 body,
 :where(blockquote, figure, fieldset):where([class]) {
   margin: 0;
 }
-
 
 /* 🧾 Убираем вертикальные отступы у текстовых элементов с классами */
 :where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
@@ -46,18 +31,15 @@ body,
   border: none;
 }
 
-
 /* 🔹 Убираем стандартные маркеры списков с классами */
 :where(ul[class]) {
   list-style: none;
 }
 
-
 /* 🏠 Обнуляем стиль address */
 :where(address[class]) {
   font-style: normal;
 }
-
 
 /* 📝 Отступы для обычных параграфов без классов */
 p {
@@ -69,7 +51,6 @@ p:where(:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
-
 /* 🖼️ Унификация работы с изображениями и видео */
 img,
 video {
@@ -77,7 +58,6 @@ video {
   max-width: 100%;
   height: auto;
 }
-
 
 /* ⌨️ Наследуем шрифт для интерактивных элементов */
 input,
@@ -87,7 +67,6 @@ button {
   font: inherit;
 }
 
-
 /* 🌐 Глобальные настройки HTML */
 html {
   font-size: 100%; /* стабильная база для rem() */
@@ -96,19 +75,16 @@ html {
   scroll-behavior: smooth; /* плавная прокрутка */
 }
 
-
 /* 🧍 Базовые стили body */
 body {
   min-height: 100%;
   line-height: 1.5;
 }
 
-
 /* 🔗 Ссылки с классами — inline-flex для центрирования */
 a:where([class]) {
   display: inline-flex;
 }
-
 
 /* 🖱️ Курсор-рука при наведении */
 button,
@@ -116,37 +92,31 @@ label {
   cursor: pointer;
 }
 
-
 /* 📱 Убираем подсветку при тапе (iOS/Android) */
 button {
   -webkit-tap-highlight-color: transparent;
 }
 
-
 /* 🎨 Приводим fill SVG к currentColor */
-:where([fill]:not([fill="none"], [fill^="url"])) {
+:where([fill]:not([fill=none], [fill^=url])) {
   fill: currentColor;
 }
 
-
 /* 🖌️ Приводим stroke SVG к currentColor */
-:where([stroke]:not([stroke="none"], [stroke^="url"])) {
+:where([stroke]:not([stroke=none], [stroke^=url])) {
   stroke: currentColor;
 }
-
 
 /* ⚡ Исправляем задержку смены цвета SVG при hover */
 svg * {
   transition-property: fill, stroke;
 }
 
-
 /* 🧾 Таблицы — классическое collapse поведение */
 :where(table) {
   border-collapse: collapse;
   border-color: currentColor;
 }
-
 
 /* ♿ Поддержка prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
@@ -159,3 +129,22 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body p {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
