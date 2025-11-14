@@ -1,0 +1,48 @@
+@use 'functions' as *;
+
+// Точки перелома (в пикселях)
+$laptop: 1440.98;
+$tablet: 1024.98;
+$mobile: 768.98;
+
+// Миксин: стили для экранов ШИРЕ ноутбука
+@mixin laptop-above {
+  @media (width > rem($laptop)) {
+    @content;
+  }
+}
+
+// Миксин: стили для экранов ДО размера ноутбука
+@mixin laptop {
+  @media (width <= rem($laptop)) {
+    @content;
+  }
+}
+
+// Миксин: стили для экранов ШИРЕ планшета
+@mixin tablet-above {
+  @media (width > rem($tablet)) {
+    @content;
+  }
+}
+
+// Миксин: стили для экранов ДО размера планшета
+@mixin tablet {
+  @media (width <= rem($tablet)) {
+    @content;
+  }
+}
+
+// Миксин: стили для экранов ШИРЕ мобильного
+@mixin mobile-above {
+  @media (width > rem($mobile)) {
+    @content;
+  }
+}
+
+// Миксин: стили для экранов ДО размера мобильного
+@mixin mobile {
+  @media (width <= rem($mobile)) {
+    @content;
+  }
+}

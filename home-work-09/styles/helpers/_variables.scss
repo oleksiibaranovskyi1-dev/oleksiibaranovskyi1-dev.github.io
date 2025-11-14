@@ -1,0 +1,74 @@
+@use 'functions' as *;
+@use 'media' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+  --color-light-cream: #FFF8E4;
+  /* Акцентные */
+  --color-peach-accent: #FF9C7D;
+  --color-warm-accent: #DABC98;
+  /* Кнопки и фоны */
+  --button-orange: #FF6336;
+  --button-light: #FFFFFF;
+  --button-dark: #000000;
+
+  /* Button heights */
+  --button-height-sm: #{rem(45)};
+  --button-height-lg: #{rem(60)};
+
+  /* 🅰️ Шрифты */
+  --font-family: "Graphik", sans-serif;
+  /* 📦 Контейнер */
+  --container-width: #{rem(1440)}; /* контентная ширина макета (1440 - 2×75px) */
+  --container-padding-x: #{rem(55)}; /* внутренние отступы по бокам */
+
+  /* ⚡ Анимации */
+  --transition-duration: 0.2s;
+
+
+}
+
+/* 🅰️ Шрифты */
+$font-family: var(--font-family);
+// Colors
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-light-cream: var(--color-light-cream);
+
+$color-peach-accent: var(--color-peach-accent);
+$color-warm-accent: var(--color-warm-accent);
+
+// Buttons - colors
+$button-orange: var(--button-orange);
+$button-light: var(--button-light);
+$button-dark: var(--button-dark);
+
+// Buttons - Heights
+$button-height-sm: var(--button-height-sm);
+$button-height-lg: var(--button-height-lg);
+
+/* 💻 Laptop (≤ 1440px) */
+@include laptop {
+  :root {
+    --container-width: #{rem(1440)};
+    --container-padding-x: #{rem(55)};
+  }
+}
+
+/* 📱 Tablet (≤ 768px) */
+@include tablet {
+  :root {
+    --container-width: #{rem(1024)};
+    --container-padding-x: #{rem(40)};
+  }
+}
+
+/* 📲 Mobile (≤ 360px) */
+@include mobile {
+  :root {
+    --container-width: 100%;
+    --container-padding-x: #{rem(16)};
+  }
+
+}

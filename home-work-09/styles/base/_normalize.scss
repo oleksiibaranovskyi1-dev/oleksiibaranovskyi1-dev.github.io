@@ -1,0 +1,148 @@
+/* 🔲 Нормализация блочной модели */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+/* 📋 Списки — убираем паддинги у списков с классами */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+
+/* ⚙️ Обнуляем внешние отступы body, figure, fieldset и blockquote */
+body,
+:where(blockquote, figure, fieldset):where([class]) {
+  margin: 0;
+}
+
+
+/* 🧾 Убираем вертикальные отступы у текстовых элементов с классами */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  padding: 0;
+  border: none;
+}
+
+
+/* 🔹 Убираем стандартные маркеры списков с классами */
+:where(ul[class]) {
+  list-style: none;
+}
+
+
+/* 🏠 Обнуляем стиль address */
+:where(address[class]) {
+  font-style: normal;
+}
+
+
+/* 📝 Отступы для обычных параграфов без классов */
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+
+/* 🖼️ Унификация работы с изображениями и видео */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ⌨️ Наследуем шрифт для интерактивных элементов */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+
+/* 🌐 Глобальные настройки HTML */
+html {
+  font-size: 100%; /* стабильная база для rem() */
+  height: 100%; /* прижимает футер к низу */
+  scrollbar-gutter: stable; /* убирает сдвиг при появлении скролла */
+  scroll-behavior: smooth; /* плавная прокрутка */
+}
+
+
+/* 🧍 Базовые стили body */
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+
+/* 🔗 Ссылки с классами — inline-flex для центрирования */
+a:where([class]) {
+  display: inline-flex;
+}
+
+
+/* 🖱️ Курсор-рука при наведении */
+button,
+label {
+  cursor: pointer;
+}
+
+
+/* 📱 Убираем подсветку при тапе (iOS/Android) */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* 🎨 Приводим fill SVG к currentColor */
+:where([fill]:not([fill="none"], [fill^="url"])) {
+  fill: currentColor;
+}
+
+
+/* 🖌️ Приводим stroke SVG к currentColor */
+:where([stroke]:not([stroke="none"], [stroke^="url"])) {
+  stroke: currentColor;
+}
+
+
+/* ⚡ Исправляем задержку смены цвета SVG при hover */
+svg * {
+  transition-property: fill, stroke;
+}
+
+
+/* 🧾 Таблицы — классическое collapse поведение */
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+
+/* ♿ Поддержка prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
