@@ -44,6 +44,7 @@
 }
 
 .button-light-alt {
+  max-width: rem(160);
   padding-inline: rem(29);
 
 }
@@ -54,18 +55,19 @@
   color: $color-light;
   border: none;
 
-
 }
 
 .button-orange-primary {
-  padding-inline-start: rem(22);
-  padding-inline-end: rem(21);
+  padding-inline-start: rem(21);
+  padding-inline-end: rem(22);
 
 }
 
 .button-orange-secondary {
-  padding-inline-start: rem(42);
-  padding-inline-end: rem(41);
+  max-width: rem(160);
+  width: 100%;
+  padding-inline-start: rem(41);
+  padding-inline-end: rem(42);
 }
 
 .button-orange-third {

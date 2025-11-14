@@ -4,6 +4,10 @@
   padding: rem(34) rem(0) rem(33);
   border-bottom: 1px solid rgba(0, 0, 0, 0.50);
 
+  @include tablet {
+    padding: rem(24) rem(0) rem(24);
+  }
+
   &__menu {
     display: flex;
     align-items: center;
@@ -18,9 +22,15 @@
   &__nav {
     margin-left: rem(51);
 
+    @include tablet {
+    }
+
     &-list {
       display: flex;
       column-gap: rem(57);
+      @include tablet {
+
+      }
     }
 
     &-link {
@@ -35,6 +45,10 @@
     display: flex;
     margin-left: auto;
     column-gap: rem(10);
+
+    @include tablet {
+
+    }
   }
 
 }

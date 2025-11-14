@@ -1,0 +1,50 @@
+@use '../helpers/index' as *;
+
+.hero {
+  padding: rem(100) rem(0) rem(100);
+
+  &__body {
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  &__inner {
+    max-width: rem(550);
+  }
+
+  &__title {
+    line-height: 1.1;
+    margin-bottom: rem(50);
+  }
+
+  &__description {
+    max-width: rem(450);
+    font-size: rem(25);
+    margin-bottom: rem(50);
+    line-height: 1.4;
+
+  }
+
+
+  &__actions {
+
+    display: flex;
+    column-gap: rem(10);
+    margin-bottom: rem(24);
+  }
+
+  &__note {
+    font-size: rem(15);
+  }
+
+  &__image {
+    max-width: rem(750);
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

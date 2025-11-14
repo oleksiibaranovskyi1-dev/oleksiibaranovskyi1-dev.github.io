@@ -1,0 +1,30 @@
+@use '../helpers/index' as *;
+
+.trusted {
+  background: $color-peach-accent;
+  padding: rem(106) rem(0) rem(106);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: rem(70);
+
+  }
+
+
+  &__title {
+
+    max-width: rem(700);
+
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+}
