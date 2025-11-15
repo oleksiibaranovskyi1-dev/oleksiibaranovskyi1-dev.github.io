@@ -1,0 +1,92 @@
+@use '../helpers/index' as *;
+
+.productivity {
+  padding: rem(150) 0;
+
+  @include tablet {
+    padding: rem(100) 0;
+  }
+
+  @include mobile {
+    padding: rem(60) 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(80);
+    text-align: center;
+
+    @include tablet {
+      row-gap: rem(60);
+    }
+
+    @include mobile {
+      row-gap: rem(40);
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30) rem(15);
+    justify-content: center;
+    align-items: stretch;
+
+    @include tablet {
+      column-gap: rem(30);
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc(33.333% - #{rem(20)});
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex: 0 1 calc(50% - #{rem(20)});
+      text-align: center;
+    }
+
+    @include mobile {
+      flex: 0 1 100%;
+    }
+
+    &-img {
+      height: rem(200);
+      margin-bottom: rem(49);
+      object-fit: contain;
+      @include tablet {
+        margin-bottom: rem(20);
+
+      }
+    }
+
+    &-title {
+      font-size: rem(30);
+      line-height: 1.3;
+      margin-bottom: rem(30);
+
+      @include tablet {
+        margin-bottom: rem(15);
+      }
+    }
+
+    &-description {
+      flex-grow: 1;
+      line-height: 1.5;
+      margin-bottom: rem(26);
+      @include tablet {
+        margin-bottom: rem(15);
+      }
+    }
+  }
+
+  &__link {
+    font-size: rem(20);
+    line-height: 1.5;
+    color: inherit;
+  }
+}
+

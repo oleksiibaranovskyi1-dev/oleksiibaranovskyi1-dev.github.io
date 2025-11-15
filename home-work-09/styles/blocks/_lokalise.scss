@@ -1,0 +1,64 @@
+@use '../helpers/index' as *;
+
+.lokalise {
+  background-color: #FFF8E4;
+  padding: rem(120) 0 rem(90);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(58);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(110) rem(55);
+
+    @include mobile {
+      gap: rem(50) rem(30);
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc((100% - #{rem(57)} * 2) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include mobile {
+      flex: 0 1 calc((100% - #{rem(30)}) / 2);
+    }
+
+    &-title {
+      line-height: 1.4;
+      text-align: center;
+
+
+    }
+
+    &-description {
+      text-align: center;
+      max-width: rem(300);
+      line-height: 1.4;
+
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: rem(22);
+    text-decoration: none;
+    color: inherit;
+
+
+  }
+
+
+}
