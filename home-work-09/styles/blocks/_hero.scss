@@ -1,22 +1,49 @@
 @use '../helpers/index' as *;
 
 .hero {
-  padding: rem(100) rem(0) rem(100);
+  padding: rem(100) 0;
+
+  @include tablet {
+    padding: rem(80) 0;
+  }
+
+  @include mobile {
+    padding: rem(50) 0;
+  }
 
   &__body {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      row-gap: rem(15);
+      justify-content: center;
+    }
 
 
   }
 
   &__inner {
     max-width: rem(550);
+    @include tablet {
+      max-width: 100%;
+    }
+
+
   }
 
   &__title {
     line-height: 1.1;
     margin-bottom: rem(50);
+    @include tablet {
+      margin-bottom: rem(35);
+    }
+
+    @include mobile {
+      margin-bottom: rem(15);
+    }
   }
 
   &__description {
@@ -25,14 +52,28 @@
     margin-bottom: rem(50);
     line-height: 1.4;
 
+    @include tablet {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: rem(35);
+    }
+    @include mobile {
+      margin-bottom: rem(15);
+    }
+
   }
 
 
   &__actions {
-
     display: flex;
     column-gap: rem(10);
     margin-bottom: rem(24);
+
+    @include tablet {
+      justify-content: center;
+      margin-bottom: rem(14);
+      width: 100%;
+    }
   }
 
   &__note {
@@ -41,10 +82,13 @@
 
   &__image {
     max-width: rem(750);
+
+
   }
 
   &__img {
-    max-width: 100%;
     width: 100%;
+
+
   }
 }

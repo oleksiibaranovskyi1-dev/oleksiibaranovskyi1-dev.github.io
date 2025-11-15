@@ -9,16 +9,17 @@
   white-space: nowrap;
   font-size: rem(16);
   border: none;
+
+
 }
 
 .button-sm {
   height: $button-height-sm;
   max-width: rem(120);
   @include mobile {
-
     max-width: rem(100);
-
   }
+
 
 }
 
@@ -46,11 +47,13 @@
 .button-light {
   padding-inline: rem(40);
 
+
 }
 
 .button-light-alt {
   max-width: rem(160);
   padding-inline: rem(29);
+
 
 }
 
@@ -73,6 +76,7 @@
   width: 100%;
   padding-inline-start: rem(41);
   padding-inline-end: rem(42);
+
 }
 
 .button-orange-third {
