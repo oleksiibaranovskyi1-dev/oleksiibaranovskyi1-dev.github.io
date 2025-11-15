@@ -1,0 +1,114 @@
+@use '../helpers/index' as *;
+
+.integrations {
+  padding: rem(100) 0;
+
+  @include tablet {
+    padding: rem(50) 0;
+  }
+
+  @include mobile {
+    padding: rem(30) 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(80);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+  }
+
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+
+    margin-bottom: rem(25);
+
+    @include tablet {
+      max-width: rem(380);
+      text-align: left;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+
+    @include mobile {
+      text-align: center;
+      align-items: center;
+    }
+
+
+  }
+
+  &__title {
+    font-size: rem(65);
+    line-height: 1.1;
+    max-width: rem(790);
+    margin-bottom: rem(5);
+
+    @include tablet {
+      text-align: left;
+      font-size: rem(40);
+
+      margin-bottom: rem(15);
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: rem(30);
+      max-width: rem(400);
+    }
+
+  }
+
+  &__description {
+    max-width: rem(520);
+    font-size: rem(25);
+    line-height: 1.2;
+
+    @include tablet {
+      text-align: start;
+
+    }
+    @include mobile {
+      font-size: rem(20);
+      max-width: rem(450);
+      text-align: center;
+    }
+
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: rem(35);
+
+    @include tablet {
+      align-items: flex-end;
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__image {
+    max-width: rem(1000);
+    width: 100%;
+  }
+}
