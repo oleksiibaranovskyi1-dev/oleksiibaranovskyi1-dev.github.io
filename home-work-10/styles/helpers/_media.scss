@@ -1,0 +1,57 @@
+@use 'functions' as *;
+
+// Точки перелома (в пикселях)
+$desktop-hd: 1920;   // Figma HD (1920px)
+$desktop-sd: 1440;   // Figma SD (1440px)
+$laptop: 1024;       // Laptop
+$tablet: 768;        // Tablet
+$mobile: 360;        // Mobile
+
+// ⬅️ До HD desktop (≤ 1920px)
+@mixin desktop-hd {
+  @media (width <= #{rem($desktop-hd)}) {
+    @content;
+  }
+}
+
+// ⬅️ SD desktop (≤ 1440px)
+@mixin desktop-sd {
+  @media (width <= #{rem($desktop-sd)}) {
+    @content;
+  }
+}
+
+// ⬅️ Laptop (≤ 1024px)
+@mixin laptop {
+  @media (width <= #{rem($laptop)}) {
+    @content;
+  }
+}
+
+// ⬅️ Tablet (≤ 768px)
+@mixin tablet {
+  @media (width <= #{rem($tablet)}) {
+    @content;
+  }
+}
+
+// ⬅️ Mobile (≤ 360px)
+@mixin mobile {
+  @media (width <= #{rem($mobile)}) {
+    @content;
+  }
+}
+
+// Кадры шире планшета (> 768px)
+@mixin tablet-above {
+  @media (width > #{rem($tablet)}) {
+    @content;
+  }
+}
+
+// Кадры шире мобильного (> 360px)
+@mixin mobile-above {
+  @media (width > #{rem($mobile)}) {
+    @content;
+  }
+}

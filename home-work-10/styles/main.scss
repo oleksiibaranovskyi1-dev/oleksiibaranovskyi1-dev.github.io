@@ -1,0 +1,126 @@
+@use './helpers/index' as *;
+@use './base/index' as *;
+
+
+.header {
+  padding: rem(50) 0;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include laptop {
+      flex-direction: column;
+      row-gap: rem(30);
+
+
+    }
+  }
+
+  &__logo {
+    @include laptop {
+      order: 2;
+    }
+
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
+
+
+    @include laptop {
+      display: contents;
+    }
+  }
+
+  &__info {
+    &-row {
+      display: flex;
+      column-gap: rem(6);
+      align-items: center;
+    }
+
+    @include laptop {
+      order: 1;
+    }
+
+  }
+
+  &__contacts {
+    &-link {
+      font-size: rem(16);
+      color: #B3B3BA;
+    }
+  }
+
+  &__phone {
+    font-size: rem(16);
+    color: #B3B3BA;
+    font-weight: 700;
+  }
+
+  &__langs {
+    &-item {
+      border: none;
+      background: transparent;
+      color: #B3B3BA;
+      font-size: rem(12);
+      font-weight: 700;
+      letter-spacing: rem(1);
+
+      &--active {
+        border-radius: rem(8);
+        background: #F0145A;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      column-gap: rem(15);
+      justify-content: flex-end;
+    }
+
+    &__link {
+
+      color: #24A3FF;
+      font-weight: 700;
+
+      &--active {
+        color: #F0145A;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: rem(-2);
+          width: 100%;
+          height: rem(2);
+          background-color: #F0145A;;
+          border-radius: rem(2);
+          align-self: stretch;
+        }
+      }
+    }
+
+
+  }
+
+  &__nav {
+
+    @include laptop {
+      order: 3;
+    }
+
+  }
+
+
+}
+

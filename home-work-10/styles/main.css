@@ -1,0 +1,309 @@
+@charset "UTF-8";
+:root {
+  /* 🅰️ Шрифты */
+  --font-family: "Montserrat", sans-serif;
+  /* 📦 Контейнер */
+  /* Desktop HD (≥1441px) */
+  --container-width: 82.5rem; /* контентная ширина макета (1320 - 2×160px) */
+  --container-padding-x: 10rem; /* внутренние отступы по бокам */
+}
+
+/* 🅰️ Шрифты */
+/* 🖥 Desktop SD (≤1440px) */
+@media (width <= 1440px) {
+  :root {
+    --container-width: 82.5rem;
+    --container-padding-x: 3.75rem;
+  }
+}
+/* 💻 Laptop (≤ 1024px) */
+@media (width <= 64rem) {
+  :root {
+    --container-width: 56.5rem;
+    --container-padding-x: 3.125rem;
+  }
+}
+/* 📱 Tablet (≤ 768px) */
+@media (width <= 48rem) {
+  :root {
+    --container-width: 44.25rem;
+    --container-padding-x: 1.875rem;
+  }
+}
+/* 📲 Mobile (≤ 360px) */
+@media (width <= 22.5rem) {
+  :root {
+    --container-width: 100%;
+    --container-padding-x: 1rem;
+  }
+}
+/* 🔲 Нормализация блочной модели */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* 📋 Списки — убираем паддинги у списков с классами */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/* ⚙️ Обнуляем внешние отступы body, figure, fieldset и blockquote */
+body,
+:where(blockquote, figure, fieldset):where([class]) {
+  margin: 0;
+}
+
+/* 🧾 Убираем вертикальные отступы у текстовых элементов с классами */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  padding: 0;
+  border: none;
+}
+
+/* 🔹 Убираем стандартные маркеры списков с классами */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/* 🏠 Обнуляем стиль address */
+:where(address[class]) {
+  font-style: normal;
+}
+
+/* 📝 Отступы для обычных параграфов без классов */
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/* 🖼️ Унификация работы с изображениями и видео */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ⌨️ Наследуем шрифт для интерактивных элементов */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* 🌐 Глобальные настройки HTML */
+html {
+  font-size: 100%; /* стабильная база для rem() */
+  height: 100%; /* прижимает футер к низу */
+  scrollbar-gutter: stable; /* убирает сдвиг при появлении скролла */
+  scroll-behavior: smooth; /* плавная прокрутка */
+}
+
+/* 🧍 Базовые стили body */
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+/* 🔗 Ссылки с классами — inline-flex для центрирования */
+a:where([class]) {
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🖱️ Курсор-рука при наведении */
+button,
+label {
+  cursor: pointer;
+}
+
+/* 📱 Убираем подсветку при тапе (iOS/Android) */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 🎨 Приводим fill SVG к currentColor */
+:where([fill]:not([fill=none], [fill^=url])) {
+  fill: currentColor;
+}
+
+/* 🖌️ Приводим stroke SVG к currentColor */
+:where([stroke]:not([stroke=none], [stroke^=url])) {
+  stroke: currentColor;
+}
+
+/* ⚡ Исправляем задержку смены цвета SVG при hover */
+svg * {
+  transition-property: fill, stroke;
+}
+
+/* 🧾 Таблицы — классическое collapse поведение */
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+/* ♿ Поддержка prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 1rem;
+  font-family: var(--font-family);
+  background-color: #FFFFFF;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  width: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.inset-0 {
+  inset: 0;
+  position: absolute;
+}
+
+.header {
+  padding: 3.125rem 0;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (width <= 64rem) {
+  .header__navigation {
+    flex-direction: column;
+    row-gap: 1.875rem;
+  }
+}
+@media (width <= 64rem) {
+  .header__logo {
+    order: 2;
+  }
+}
+.header__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.875rem;
+}
+@media (width <= 64rem) {
+  .header__body {
+    display: contents;
+  }
+}
+.header__info-row {
+  display: flex;
+  column-gap: 0.375rem;
+  align-items: center;
+}
+@media (width <= 64rem) {
+  .header__info {
+    order: 1;
+  }
+}
+.header__contacts-link {
+  font-size: 1rem;
+  color: #B3B3BA;
+}
+.header__phone {
+  font-size: 1rem;
+  color: #B3B3BA;
+  font-weight: 700;
+}
+.header__langs-item {
+  border: none;
+  background: transparent;
+  color: #B3B3BA;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+.header__langs-item--active {
+  border-radius: 0.5rem;
+  background: #F0145A;
+  text-align: center;
+  color: #FFFFFF;
+}
+.header .nav__list {
+  display: flex;
+  column-gap: 0.9375rem;
+  justify-content: flex-end;
+}
+.header .nav__link {
+  color: #24A3FF;
+  font-weight: 700;
+}
+.header .nav__link--active {
+  color: #F0145A;
+  position: relative;
+}
+.header .nav__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.125rem;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #F0145A;
+  border-radius: 0.125rem;
+  align-self: stretch;
+}
+@media (width <= 64rem) {
+  .header__nav {
+    order: 3;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
