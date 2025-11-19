@@ -50,6 +50,7 @@
       @include tablet {
         display: flex;
         column-gap: rem(50);
+        align-items: flex-start;
       }
 
       @include mobile {

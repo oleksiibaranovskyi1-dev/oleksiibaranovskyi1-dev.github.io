@@ -1152,6 +1152,7 @@ h3, .h3 {
   .footer__case-card {
     display: flex;
     column-gap: 3.125rem;
+    align-items: flex-start;
   }
 }
 @media (width <= 48.06125rem) {

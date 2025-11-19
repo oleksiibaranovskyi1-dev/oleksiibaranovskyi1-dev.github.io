@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25be1191-6bd4-4ff0-b205-d78e4790599d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/home-work-09/styles/blocks/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/home-work-09/styles/blocks/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-work-09/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/home-work-09/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="34PKmRyhnt5qINgbCa7uzV2XsZB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleks/GitHub/oleksiibaranovskyi1-dev.github.io/home-work-10/helpers&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.sass:watch.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\helpers" />
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\images" />
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\fonts" />
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\styles\base" />
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\styles\helpers" />
+      <recent name="C:\Users\oleks\GitHub\oleksiibaranovskyi1-dev.github.io\home-work-10\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="sass:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="sass:watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.sass:watch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25be1191-6bd4-4ff0-b205-d78e4790599d" name="Changes" comment="" />
+      <created>1761109927041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761109927041</updated>
+      <workItem from="1761109928696" duration="2235000" />
+      <workItem from="1761238487548" duration="7000" />
+      <workItem from="1761369245836" duration="36539000" />
+      <workItem from="1761470449729" duration="31882000" />
+      <workItem from="1761554521975" duration="137000" />
+      <workItem from="1761554767989" duration="8000" />
+      <workItem from="1761717317783" duration="782000" />
+      <workItem from="1762067488313" duration="4859000" />
+      <workItem from="1762190753733" duration="7116000" />
+      <workItem from="1762232643257" duration="26429000" />
+      <workItem from="1762533858801" duration="15905000" />
+      <workItem from="1762624378532" duration="569000" />
+      <workItem from="1762624981373" duration="271000" />
+      <workItem from="1762667763325" duration="251000" />
+      <workItem from="1762668055469" duration="617000" />
+      <workItem from="1762668702259" duration="11844000" />
+      <workItem from="1762680873060" duration="81000" />
+      <workItem from="1762688604527" duration="57000" />
+      <workItem from="1762848881605" duration="5434000" />
+      <workItem from="1763105648172" duration="254000" />
+      <workItem from="1763105941055" duration="763000" />
+      <workItem from="1763106813425" duration="305000" />
+      <workItem from="1763107285111" duration="19893000" />
+      <workItem from="1763135003524" duration="5956000" />
+      <workItem from="1763143982008" duration="44632000" />
+      <workItem from="1763233711697" duration="161000" />
+      <workItem from="1763335352111" duration="11887000" />
+      <workItem from="1763475853245" duration="4514000" />
+      <workItem from="1763483810256" duration="236000" />
+      <workItem from="1763484198755" duration="8000" />
+      <workItem from="1763484216712" duration="10000" />
+      <workItem from="1763484235011" duration="481000" />
+      <workItem from="1763485174846" duration="99000" />
+      <workItem from="1763485299186" duration="230000" />
+      <workItem from="1763485541111" duration="437000" />
+      <workItem from="1763492413803" duration="12109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
