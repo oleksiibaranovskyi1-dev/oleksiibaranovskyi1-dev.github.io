@@ -5,7 +5,7 @@ $desktop-hd: 1920;   // Figma HD (1920px)
 $desktop-sd: 1440;   // Figma SD (1440px)
 $laptop: 1024;       // Laptop
 $tablet: 768;        // Tablet
-$mobile: 360;        // Mobile
+$mobile: 510; // Mobile
 
 // ⬅️ До HD desktop (≤ 1920px)
 @mixin desktop-hd {

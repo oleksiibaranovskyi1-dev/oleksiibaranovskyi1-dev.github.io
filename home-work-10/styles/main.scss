@@ -5,6 +5,13 @@
 .header {
   padding: rem(50) 0;
 
+  @include mobile {
+    padding: 0;
+
+
+  }
+
+
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -13,7 +20,10 @@
     @include laptop {
       flex-direction: column;
       row-gap: rem(30);
+    }
 
+    @include mobile {
+      row-gap: 0;
 
     }
   }
@@ -21,6 +31,19 @@
   &__logo {
     @include laptop {
       order: 2;
+    }
+
+    @include mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-img {
+      @include mobile {
+        max-width: rem(177);
+      }
     }
 
   }
@@ -41,10 +64,29 @@
       display: flex;
       column-gap: rem(6);
       align-items: center;
+
+
+      @include mobile {
+        justify-content: space-between;
+        align-self: stretch;
+
+      }
     }
 
     @include laptop {
       order: 1;
+    }
+
+    @include tablet {
+
+      padding: rem(10);
+
+    }
+
+    @include mobile {
+      width: 100%;
+      background: #F5F5FA;
+
     }
 
   }
@@ -54,12 +96,16 @@
       font-size: rem(16);
       color: #B3B3BA;
     }
+
+
   }
 
   &__phone {
     font-size: rem(16);
     color: #B3B3BA;
     font-weight: 700;
+
+
   }
 
   &__langs {

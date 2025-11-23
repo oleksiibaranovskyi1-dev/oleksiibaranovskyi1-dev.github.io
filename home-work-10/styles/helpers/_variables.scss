@@ -33,7 +33,7 @@ $font-family: var(--font-family);
 @include tablet {
   :root {
     --container-width: #{rem(708)};
-    --container-padding-x: #{rem(30)};
+    --container-padding-x: #{rem(16)};
   }
 }
 
