@@ -85,7 +85,7 @@
 
     @include mobile {
       width: 100%;
-      background: #F5F5FA;
+      background: $color-grey-bg;
 
     }
 
@@ -94,7 +94,7 @@
   &__contacts {
     &-link {
       font-size: rem(16);
-      color: #B3B3BA;
+      color: $color-text;
     }
 
 
@@ -102,7 +102,7 @@
 
   &__phone {
     font-size: rem(16);
-    color: #B3B3BA;
+    color: $color-text;
     font-weight: 700;
 
 
@@ -112,16 +112,16 @@
     &-item {
       border: none;
       background: transparent;
-      color: #B3B3BA;
+      color: $color-text;
       font-size: rem(12);
       font-weight: 700;
       letter-spacing: rem(1);
 
       &--active {
         border-radius: rem(8);
-        background: #F0145A;
+        background: $color-accent;
         text-align: center;
-        color: #FFFFFF;
+        color: $color-light;
       }
     }
   }
@@ -135,11 +135,11 @@
 
     &__link {
 
-      color: #24A3FF;
+      color: $color-accent-link;
       font-weight: 700;
 
       &--active {
-        color: #F0145A;
+        color: $color-accent;
         position: relative;
 
         &::before {
@@ -149,7 +149,7 @@
           bottom: rem(-2);
           width: 100%;
           height: rem(2);
-          background-color: #F0145A;;
+          background-color: $color-accent;
           border-radius: rem(2);
           align-self: stretch;
         }

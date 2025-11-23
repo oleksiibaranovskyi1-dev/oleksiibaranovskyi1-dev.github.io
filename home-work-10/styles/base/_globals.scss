@@ -15,8 +15,8 @@
 
 body {
   font-size: rem(16);
-  font-family: var(--font-family); // основной шрифт
-  background-color: #FFFFFF;
+  font-family: $font-family; // основной шрифт
+  background-color: $color-light;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased; // сглаживание шрифтов
 }
